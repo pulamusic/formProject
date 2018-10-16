@@ -1,0 +1,47 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #abb2ce;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+
+.thanks {
+	text-align: center;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+#title {
+	font-weight: bold;
+}
+
+#description {
+	font-size: 1.3em;
+}
+
+label {
+	font-size: 1.2em;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}

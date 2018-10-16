@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- local stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Survey of Academics</title>
+  </head>
+  <body>
+
+    <div class="container">
+    	<!-- Header/Jumbotron	 -->
+    	<div class="jumbotron">
+    		<h1 id="title">Survey of Academics</h1>
+    		<p id="description">A brief survey of the achievements of academics</p>
+    	</div>
+
+    	<!-- Form -->
+    	<form id="survey-form" method="get" action="thanks.html">
+    		<div class="form-group">
+    			<label for="name" id="name-label">*Name:</label>
+    			<input type="text" id="name" name="name" class="input-field" placeholder="Enter your name" required>
+    		</div>
+    		<div class="form-group">
+    			<label for="institution" id="institution-label">Academic Institution:</label>
+    			<input type="text" id="institution" name="institution" class="input-field" placeholder="Enter your academic institution">
+    		</div>
+    		<div class="form-group">
+    			<label for="email" id="email-label">*Email:</label>
+    			<input type="email" id="email" name="email" class="input-field" placeholder="Enter your email" required>
+    		</div>
+    		<div class="form-group">
+    			<label for="number" id="number-label">Age:</label>
+    			<input type="number" id="number" name="age" class="input-field" placeholder="Enter your age" min="1" max="100" class="input-field">
+    		</div>
+
+    		<!-- dropdown -->
+    		<div class="form-group">
+          <label for="current-role">Which option best describes your current role in academia?</label>
+          <div class="rightTab">
+            <select id="dropdown" name="current-role" class="dropdown">
+    					<option>Select an option</option>
+    					<option  value="student">Student</option>
+    					<option value="professor">Adjunct Professor</option>
+    					<option value="learner">Tenured/Tenure-Track Professor</option>
+    					<option value="preferNo">Independent Academic</option>
+    					<option value="other">Other</option>
+    				</select>
+          </div>
+    			<label for="description">If you chose Other, would you mind describing this to us?</label>
+    			<br>
+    			<textarea name="description" id="description" cols="50" rows="3" placeholder="Enter your description here"></textarea>
+    		</div>
+
+    		<!-- 	radio buttons	 -->
+    		<div class="form-group">
+    			<div class="form-check">
+    				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+    				<label class="form-check-label" for="exampleRadios1">
+    					Default radio
+    				</label>
+    			</div>
+    			<div class="form-check">
+    				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+    				<label class="form-check-label" for="exampleRadios2">
+    					Second default radio
+    				</label>
+    			</div>
+    			<div class="form-check disabled">
+    				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+    				<label class="form-check-label" for="exampleRadios3">
+    					Third default radio
+    				</label>
+    			</div>
+    		</div>
+
+    		<!-- check boxes -->
+    		<div class="form-group">
+    			<div class="form-check">
+    				<input class="form-check-input" type="checkbox" value="1" id="defaultCheck1">
+    				<label class="form-check-label" for="defaultCheck1">
+    					Default checkbox 1
+    				</label>
+    			</div>
+    			<div class="form-check">
+    				<input class="form-check-input" type="checkbox" value="2" id="defaultCheck2">
+    				<label class="form-check-label" for="defaultCheck2">
+    					Default checkbox 2
+    				</label>
+    			</div>
+    		</div>
+
+    		<!-- submit button -->
+    		<button class="btn btn-primary" id="submit" type="submit" value="Submit">Submit</button>
+    	</form>
+    </div><!-- end of container -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- freeCodeCamp testing script -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

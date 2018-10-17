@@ -26,6 +26,8 @@
     		<p id="description">A brief survey of the achievements of academics</p>
     	</div>
 
+      <p>* denotes a required field</p>
+
     	<!-- Form -->
     	<form id="survey-form" method="get" action="thanks.html">
     		<div class="form-group">
@@ -46,60 +48,89 @@
     		</div>
 
     		<!-- dropdown -->
-    		<div class="form-group">
-          <label for="current-role">Which option best describes your current role in academia?</label>
-          <div class="rightTab">
-            <select id="dropdown" name="current-role" class="dropdown">
-    					<option>Select an option</option>
-    					<option  value="student">Student</option>
-    					<option value="professor">Adjunct Professor</option>
-    					<option value="learner">Tenured/Tenure-Track Professor</option>
-    					<option value="preferNo">Independent Academic</option>
-    					<option value="other">Other</option>
-    				</select>
-          </div>
-    			<label for="description">If you chose Other, would you mind describing this to us?</label>
-    			<br>
-    			<textarea name="description" id="description" cols="50" rows="3" placeholder="Enter your description here"></textarea>
-    		</div>
+        <div id="role">
+          <div class="form-group">
+            <label for="current-role">Which option best describes your current role in academia?</label>
+            <div class="rightTab">
+              <select id="dropdown" name="current-role" class="dropdown">
+      					<option>Select an option</option>
+      					<option  value="student">Student</option>
+      					<option value="professor">Adjunct Professor</option>
+      					<option value="learner">Tenured/Tenure-Track Professor</option>
+      					<option value="preferNo">Independent Academic</option>
+      					<option value="other">Other</option>
+      				</select>
+            </div>
+      			<label for="description">If you chose Other, would you mind describing this to us?</label>
+      			<br>
+      			<textarea name="description" id="description" cols="50" rows="3" placeholder="Enter your description here"></textarea>
+      		</div>
+        </div>
 
     		<!-- 	radio buttons	 -->
-    		<div class="form-group">
-    			<div class="form-check">
-    				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-    				<label class="form-check-label" for="exampleRadios1">
-    					Default radio
-    				</label>
-    			</div>
-    			<div class="form-check">
-    				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-    				<label class="form-check-label" for="exampleRadios2">
-    					Second default radio
-    				</label>
-    			</div>
-    			<div class="form-check disabled">
-    				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
-    				<label class="form-check-label" for="exampleRadios3">
-    					Third default radio
-    				</label>
-    			</div>
-    		</div>
+        <div id="radio-buttons">
+          <label for="radio-buttons">Have you completed your terminal degree?</label>
+          <div class="form-group">
+      			<div class="form-check">
+      				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+      				<label class="form-check-label" for="exampleRadios1">
+      					Yes
+      				</label>
+      			</div>
+      			<div class="form-check">
+      				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      				<label class="form-check-label" for="exampleRadios2">
+      					No
+      				</label>
+      			</div>
+      		</div>
+        </div>
 
     		<!-- check boxes -->
-    		<div class="form-group">
-    			<div class="form-check">
-    				<input class="form-check-input" type="checkbox" value="1" id="defaultCheck1">
-    				<label class="form-check-label" for="defaultCheck1">
-    					Default checkbox 1
-    				</label>
-    			</div>
-    			<div class="form-check">
-    				<input class="form-check-input" type="checkbox" value="2" id="defaultCheck2">
-    				<label class="form-check-label" for="defaultCheck2">
-    					Default checkbox 2
-    				</label>
-    			</div>
-    		</div>
+        <div id="check-boxes">
+          <label for="check-boxes">What activities have most clearly benefitted your career. Please check all that apply.</label>
+          <div class="form-group">
+      			<div class="form-check">
+      				<input class="form-check-input" type="checkbox" value="1" id="defaultCheck1">
+      				<label class="form-check-label" for="defaultCheck1">
+      					Conference presentations
+      				</label>
+      			</div>
+      			<div class="form-check">
+      				<input class="form-check-input" type="checkbox" value="2" id="defaultCheck2">
+      				<label class="form-check-label" for="defaultCheck2">
+      					Writing and publishing articles
+      				</label>
+      			</div>
+            <div class="form-check">
+      				<input class="form-check-input" type="checkbox" value="3" id="defaultCheck3">
+      				<label class="form-check-label" for="defaultCheck3">
+      					Writing and publishing books
+      				</label>
+      			</div>
+            <div class="form-check">
+      				<input class="form-check-input" type="checkbox" value="4" id="defaultCheck4">
+      				<label class="form-check-label" for="defaultCheck4">
+      					Department service
+      				</label>
+      			</div>
+            <div class="form-check">
+      				<input class="form-check-input" type="checkbox" value="5" id="defaultCheck5">
+      				<label class="form-check-label" for="defaultCheck5">
+      					Teaching workshops
+      				</label>
+      			</div>
+            <div class="form-check">
+      				<input class="form-check-input" type="checkbox" value="6" id="defaultCheck6">
+      				<label class="form-check-label" for="defaultCheck6">
+      					Other
+      				</label>
+      			</div>
+            <label for="other">If you chose Other, would you mind telling us what it is?</label>
+      			<br>
+      			<textarea name="description" id="other" cols="50" rows="3" placeholder="Enter your description here"></textarea>
+      		</div>
+        </div>
 
     		<!-- submit button -->
     		<button class="btn btn-primary" id="submit" type="submit" value="Submit">Submit</button>

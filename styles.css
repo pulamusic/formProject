@@ -45,3 +45,9 @@ label {
   border: 1px solid #c0c0c0;
   border-radius: 2px;
 }
+
+#radio-buttons, #check-boxes, #role {
+	margin: 20px auto 20px auto;
+	width: 600px;
+	border: 1px solid #808080;
+}
